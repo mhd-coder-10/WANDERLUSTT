@@ -1,0 +1,65 @@
+<% layout("/layouts/boilerplate.ejs") %> <!-- inmportant remember-->
+
+    <body id="newBody">
+        <h1 class="newH1">Add Your Listing</h1>
+
+        <div class="newDV">
+            <form method="POST" action="/listings" class=" g-3 needs-validation" novalidate
+            enctype="multipart/form-data">  <!-- Here enctype="multipart/form-data" used to send file data in html form.-->
+
+                <div class="newForm">
+                    <lable for="title" class="form-label"> Enter Title :
+                        <input name="listing[title]" placeholder="Title" type="text" class="title form-control"
+                            required >
+                        <div class="valid-feedback">Title Look Good!</div>
+                        <div class="invalid-feedback">Title Should be Valid</div>
+                    </lable>
+                </div>
+
+                <div class="newForm">
+                    <lable for="image" class="form-label" > Upoad Listing Image :
+                        <input name="listing[image]" class="newImage form-control" type="file" required>
+                        <div class="invalid-feedback">Please Enter Image</div>                        
+                    </lable>
+                </div>
+
+                <div id="row"  class="newForm"> 
+                    <div class="pricee">
+                        <lable for="price" class="form-label"> Enter Price :
+                            <input name="listing[price]" placeholder="Price" type="" class="newPrice form-control"
+                                id="neww" required>
+                            <div class="invalid-feedback">Price Should be Valid</div>                            
+                        </lable>
+                    </div>
+                    <div class="countryy">
+                        <lable for="country" class="form-label"> Enter Country :
+                            <input name="listing[country]" placeholder="Country" type="text"
+                                class="newCoutry form-control" id="neww" required>
+                            <div class="invalid-feedback">Country Name Should be Valid</div>                            
+                        </lable>
+                    </div>
+                </div>
+
+                <div class="newForm">
+                    <lable for="location" class="form-label"> Enter Location :
+                        <input name="listing[location]" placeholder="Location" type="text"
+                            class="newLocation form-control" required>
+                        <div class="invalid-feedback">Please Enter Right Location</div>
+                    </lable>
+                </div>
+
+                <div class="newForm">
+                    <lable for="description" class="form-label"> Enter Description :
+                        <textarea name="listing[description]" placeholder="Description" type="text"
+                            class="newDescription form-control" rows="2" cols="40" required> </textarea>
+                        <div class="invalid-feedback">Please Enter Short Discription</div>                    
+                    </lable>
+                </div>
+                <br>
+
+                <button type="submit">ADD</button>
+
+            </form>
+        </div>
+
+    </body>

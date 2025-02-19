@@ -1,0 +1,18 @@
+
+<% layout("/layouts/boilerplate.ejs") %>   <!-- inmportant rember-->
+
+<body id="linkBody">
+
+    <form method="get" action="/listings/new" class="create">
+        <button>Create New Listing</button>
+    </form>
+
+    <!-- <h3 class="linkH3"> &star; If you get the Listings so <br> Click the following Links :</h3> -->
+
+    <ul class="listingLinks">
+
+        <% for (lstLink of listingsLink) { %>
+            <li> <a href="/listings/<%=lstLink.id %>"> <%= lstLink.title %> </a> </li>
+        <% } %>
+    </ul>
+</body>

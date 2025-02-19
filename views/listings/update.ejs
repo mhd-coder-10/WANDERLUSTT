@@ -1,0 +1,75 @@
+<% layout("/layouts/boilerplate.ejs") %> <!-- inmportant rember-->
+
+    <body id="updtBody">
+        <h1 class="updtH1">Update Listings</h1>
+
+        <h2 class="updtH2"><span>Listings : </span>
+            <%= updtList.title %>
+        </h2>
+
+        <div class="updtDV">
+            <form method="POST" action="/listings/<%= updtList._id %>?_method=PUT" novalidate
+                class="g-3 needs-validation" enctype="multipart/form-data">
+
+                <div class="upd-div-Form">
+                    <lable for="title" class="update-form"> Change Title :
+                        <input name="listing[title]" value="<%= updtList.title %>" type="text" class="form-control"
+                            required>
+                        <div class="valid-feedback">Title Look Good!</div>
+                        <div class="invalid-feedback">Title Should be Valid</div>
+                    </lable>
+                </div>
+
+                <div class="upd-div-Form">
+                    <h4>Original Listing Image</h4>
+                    <img class="updtImage" src="<%= originalImageUrl %>">
+                </div>
+
+                <div class="upd-div-Form">
+                    <lable for="image" class="update-form" > Update New Image :
+                        <input name="listing[image]" class="newImage form-control" type="file">
+                        <div class="invalid-feedback">Please Enter Image</div>                        
+                    </lable>
+                </div>
+
+                <div id="upRow">
+                    <div class="upPrice" class="upd-div-Form">
+                        <lable for="price" class="update-form"> Change Price :
+                            <input name="listing[price]" value="<%= updtList.price %>" type="" id="updd"
+                                class="form-control" required>
+                            <div class="invalid-feedback">Please Enter Valid Price</div>
+                        </lable>
+                    </div>
+
+                    <div class="upCountry" class="upd-div-Form">
+                        <lable for="country" class="update-form"> Change Country :
+                            <input name="listing[country]" value="<%= updtList.country %>" type="text" id="updd"
+                                class="form-control" required>
+                            <div class="invalid-feedback">Country Name Should be Valid</div>
+                        </lable>
+                    </div>
+                </div>
+
+                <div class="upd-div-Form">
+                    <lable for="location" class="update-form"> Chnage Location :
+                        <input name="listing[location]" value="<%= updtList.location %>" type="text"
+                            class="form-control" required>
+                        <div class="invalid-feedback">Please Enter Right Location </div>
+                    </lable>
+                </div>
+
+                <div class="upd-div-Form">
+                    <lable for="description" class="update-form"> Change Description :
+                        <textarea name="listing[description]" type="text" rows="3" cols="40" class="form-control"
+                            required> <%= updtList.description %> </textarea>
+                        <div class="invalid-feedback">Please Enter Short Discription</div>                    
+                    </lable> <br>
+                </div>
+
+                <button class="btn-dark" type="submit">UPDATE</button>
+            </form>
+        </div>
+
+    </body>
+
+    </html>

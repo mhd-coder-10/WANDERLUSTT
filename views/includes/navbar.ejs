@@ -1,0 +1,38 @@
+
+
+<nav class="navbar navbar-expand-md bg-body-tertiary border-bottom sticky-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/listings">
+            <i class="fa-regular fa-compass"></i>
+            <a class="navTitle" href="/listings">WanderLust</a>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse navbar-22" id="navbarNavAltMarkup">
+            <!-- <div class="navbar-nav"> -->
+                <!-- <a class="nav-link" href="/listings">Home</a> -->
+                <!-- <a class="nav-link" href="/listings/alllistings"><b>Explore</b></a>  -->
+            <!-- </div> -->
+
+            <div id="search-bar">
+                <input type="text" class="srch_input" name="input">
+                <button class="srch_btn" type="button" name="search">Search</button>
+            </div> 
+
+            <div class="navbar-nav sign-nav">
+                <a class="nav-link nav-link1" href="/listings/alllistings"><b>Explore</b></a> 
+                <a class="nav-link nav-link1" href="/listings/new"><b>Add Listing</b></a>
+                <% if (!currUser) { %> 
+                    <a class="nav-link" href="/signup"><b>Sign Up</b></a>
+                    <a class="nav-link" href="/login"><b>Log In</b></a>
+                <% } %>
+                <% if (currUser) { %> 
+                    <a class="nav-link" href="/logout"><b>Log out</b></a>
+                <% } %>
+            </div>
+        </div>
+    </div>
+</nav>

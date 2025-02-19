@@ -1,0 +1,1917 @@
+/* PROJECT PHASE 1 PART - A */
+
+
+/* boilerplate styling */
+
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: rgb(252, 246, 246);
+
+}
+
+/*  responsive */
+
+@media(max-width : 313px) {
+    body {
+        background-color: rgb(252, 246, 246) !important;
+    }
+}
+
+.container {
+    flex: 1;
+}
+
+/* ----------------------------------------- */
+
+
+/* allListing ejs / Home page */
+
+#mainIndex {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1rem;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    margin-top: -1.5rem;
+}
+
+.indexH1 {
+    text-align: start;
+    margin: 1.7rem auto 0.6rem 3rem;
+    font-size: 2rem;
+    color: darkblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 900;
+}
+
+.indexH1::first-letter {
+    color: red;
+    font-size: 2.5rem;
+}
+
+.aaa {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.indexDT {
+    height: 22.5rem;
+    width: 18.3rem;
+    padding: 0.7rem 0.6rem 1rem 0.6rem;
+    display: flex;
+    margin: 1.8rem 2.1rem;
+    flex-direction: column;
+    background-color: rgb(242, 239, 235);
+    border-radius: 0.6rem;
+    cursor: pointer;
+}
+
+.indexDT .title {
+
+    margin-left: 0.5rem !important;
+    font-size: 1.1rem !important;
+    font-weight: 700;
+    color: darkblue;
+    text-align: start;
+}
+
+.indexDT .comon {
+    font-size: 1rem !important;
+    text-align: start;
+    font-weight: 700 !important;
+    color: black;
+    margin: 0.2rem 0rem;
+    margin-left: 0.5rem;
+}
+
+.indexDT .comon span {
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: darkblue;
+
+}
+
+.indexDT .imgg {
+    width: 95.7%;
+    height: 14rem;
+    background-size: cover;
+    margin: auto;
+    margin-top: 0.3rem;
+    margin-bottom: 0.9rem;
+    border-radius: 0.6rem;
+}
+
+.indexDT .imgg:hover {
+    box-shadow: 2px 2px 4px green;
+}
+
+
+.indexDT .btns {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    text-align: center;
+    width: 100%;
+    border-radius: 1rem;
+    /* border: 2px solid black; */
+    padding: 0.3rem 1rem;
+    margin: auto;
+    margin-top: 0.6rem;
+    margin-left: -0.2rem;
+}
+
+.indexDT .btns a {
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.4rem 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.indexDT .btns .btn1 {
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.4rem 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    color: red;
+    border: 2px solid red;
+}
+
+.indexDT .btns .btn2 {
+    border: 2px solid green;
+    color: green;
+}
+
+.indexDT .btns .btn3 {
+    border: 2px solid darkblue;
+    color: darkblue;
+}
+
+.text-info {
+    display: none;
+    margin: 0.3rem 0.7rem;
+    color: red !important;
+    font-weight: 700;
+}
+
+/* responsive */
+
+@media(max-width : 313px) {
+    #allBody {
+        width: 100%;
+        padding: 0;
+        margin: 0%;
+        background-color: rgb(252, 246, 246);
+
+    }
+
+    #mainIndex {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        justify-content: space-around;
+        padding: 1rem 0rem; 
+        margin-top: -1.7rem;
+    }
+
+    .indexH1 {
+        text-align: center;
+        margin: 1.7rem auto;
+        margin-bottom: -0.6rem;
+        font-size: 1.3rem;
+        color: darkblue;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 900;
+    }
+
+    .indexH1::first-letter {
+        color: red;
+        font-size: 1.6rem;
+    }
+
+    #createButton {
+        font-size: 1rem;
+        margin-top: 0rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .aaa {
+        text-decoration: none;
+    }
+
+    .indexDT {
+        height: auto;
+        width: 15rem;
+        padding: 0.6rem 0.6rem 0rem 0.6rem !important;
+        margin: 1.7rem auto;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(237, 236, 235);
+        border-radius: 0.6rem;
+    }
+
+    .indexDT .title {
+        font-size: 0.8rem !important;
+        font-weight: 700;
+        color: darkblue;
+        text-align: start;
+        line-height: 1.4rem;
+        margin-left: 0.4rem !important;
+    }
+
+    .indexDT .comon {
+        font-size: 0.8rem !important;
+        text-align: start;
+        font-weight: 700;
+        color: black;
+        margin: 0rem 0rem 1rem 0rem !important;
+        margin-left: 0.4rem !important;
+    }
+
+    .indexDT .comon span {
+        font-size: 0.95rem !important;
+        font-weight: 800;
+        color: darkblue;
+
+    }
+
+    .indexDT .imgg {
+        width: 96%;
+        height: 14rem;
+        background-size: cover;
+        margin: auto;
+        margin-top: 0.3rem;
+        margin-bottom: 0.9rem;
+        border-radius: 0.6rem;
+
+    }
+
+    .indexDT .imgg:hover {
+        box-shadow: 2px 2px 3px green;
+    }
+
+    .indexDT .btns {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        border-radius: 1rem;
+        /* border: 2px solid black; */
+        margin: auto;
+        margin-top: 0.7rem;
+    }
+
+    .indexDT .btns a {
+        font-size: 1rem;
+        font-weight: 650;
+        padding: 0.3rem 0.6rem;
+        border-radius: 1rem;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    .indexDT .btns .btn1 {
+        font-size: 1rem;
+        font-weight: 600;
+        padding: 0.3rem 0.6rem;
+        border-radius: 1rem;
+        cursor: pointer;
+        text-decoration: none;
+        color: red;
+        border: 2px solid red;
+        margin-left: 0.9rem;
+    }
+
+    .indexDT .btns .btn2 {
+        border: 2px solid green;
+        color: green;
+        margin-left: -0.4rem;
+    }
+
+    .indexDT .btns .btn3 {
+        border: 2px solid darkblue;
+        color: darkblue;
+        margin-left: 0.8rem;
+
+    }
+
+    .text-info {
+        display: none;
+        margin-top: -0.5rem;
+        margin-left: -7rem; 
+        color: red !important;
+        font-weight: 600;
+        margin-bottom: 0.7rem;
+    }
+
+}
+
+/* ---------------------------------------- */
+
+
+/* listingLinks ejs */
+
+.create button {
+    font-size: 1.3rem;
+    font-weight: 900;
+    padding: 0.4rem 1.2rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    border: 2px solid chartreuse;
+    border-radius: 1rem;
+    margin: 1.5rem auto 0.9rem 0rem;
+}
+
+.create button:hover {
+    color: chartreuse;
+    border: 2px solid black;
+}
+
+.linkH3 {
+    margin: 1rem auto 1rem 2rem;
+    color: rgb(39, 20, 1);
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 2.3rem;
+}
+
+.listingLinks {
+    margin: auto auto auto 1.66rem;
+}
+
+.listingLinks li {
+    margin: 0.6rem 0rem;
+    font-size: 1rem;
+    font-weight: 700;
+    list-style: decimal;
+}
+
+.listingLinks li a {
+    text-decoration: none;
+    color: rgb(5, 5, 119);
+}
+
+.listingLinks li a:hover {
+    text-decoration: underline;
+    color: red;
+
+}
+
+/* responsive */
+
+@media(max-width: 313px) {
+
+    #linkBody {
+        width: 100%;
+        margin: 0%;
+        background-color: rgb(252, 246, 246);
+
+    }
+
+    .create button {
+        font-size: 1rem;
+        font-weight: 900;
+        padding: 0.4rem 0.6remrem;
+        border-radius: 1rem;
+        cursor: pointer;
+        border: 2px solid chartreuse;
+        border-radius: 1rem;
+        margin: 1rem auto 1rem 3.1rem;
+        text-align: center;
+        display: none;
+    }
+
+    .create button:hover {
+        color: chartreuse;
+        border: 2px solid black;
+    }
+
+    .linkH3 {
+        margin: 1.2rem auto 1rem 1.6rem;
+        color: rgb(39, 20, 1);
+        font-size: 1rem;
+        font-weight: 800;
+        line-height: 1.8rem;
+    }
+
+    .listingLinks {
+        margin-left: 0rem;
+    }
+
+    .listingLinks li {
+        margin: 0.6rem 0rem;
+        font-size: 0.7rem;
+        font-weight: 700;
+        list-style: decimal;
+    }
+
+    .listingLinks li a {
+        text-decoration: none;
+        color: rgb(5, 5, 119);
+    }
+
+    .listingLinks li a:hover {
+        text-decoration: underline;
+        color: red;
+
+    }
+}
+
+/* ------------------------------------- */
+
+
+/* Show ejs */
+
+.showH2 {
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: darkblue;
+    margin: 2rem auto 1rem 5.5rem;
+}
+
+.showH2:first-letter {
+    color: red;
+    font-size: 2.5rem;
+}
+
+.showDV {
+    width: 48rem;
+    height: auto;
+    padding: 1rem 1rem 1.5rem 3rem;
+    margin: 1rem 1rem 1.5rem 5rem;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(252, 246, 246);
+    border-radius: 0.6rem;
+}
+
+.showDV .comonn {
+    font-size: 1.1rem;
+    text-align: start;
+    font-weight: 660;
+    color: black;
+    margin: 0.14rem 0rem;
+    margin-left: 0.5rem;
+    line-height: 1.6rem;
+}
+
+
+.showDV .shDescription {
+    font-size: 1.1rem;
+    font-weight: 660;
+}
+
+
+.showDV .shImgg {
+    width: 80%;
+    height: 17rem;
+    background-size: cover;
+    margin: auto;
+    margin: 1rem auto 2rem 1rem;
+    border-radius: 0.6rem;
+}
+
+.showDV .shImgg:hover {
+    box-shadow: 4px 4px 10px green;
+}
+
+.showDV .btns {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    text-align: center;
+    margin-left: 1rem !important;
+    width: 45%;
+    border-radius: 1rem;
+    padding: 0.3rem 0rem;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+.showDV .btns a,
+button {
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 0.3rem 1.2rem;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.showDV .btns #btn1 {
+    color: red !important;
+    background-color: black !important;
+}
+
+.showDV .btns .ac2 {
+    color: green;
+    background-color: black !important;
+
+}
+
+.showDV .btns .ac3 {
+    border: 2px solid darkblue;
+    color: darkblue;
+}
+
+/* ---------------------- */
+/* add review styling */
+
+.reviewH2 {
+    color: darkblue;
+    font-weight: 800;
+    font-size: 1.7rem;
+}
+
+.reviewLable {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-left: 0.3rem;
+}
+
+.reviewsText {
+    border: 0.10rem solid black;
+    border-radius: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-left: 0.3rem;
+
+}
+
+.reviewBtn {
+    font-size: 1.2rem;
+    margin-left: 0.6rem;
+    font-weight: 800;
+    border: 0.11rem solid black;
+}
+
+.reviewBtn:hover {
+    border: 0.11rem solid red !important;
+
+}
+
+/* Show reviews styling */
+
+#showRow {
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: #cedcd8; */
+    border-radius: 0.5rem;
+    width: 115%;
+    padding: 0.8rem 0.5rem;
+    /* justify-content: center;
+    justify-content: space-around; */
+
+}
+
+.cardDv {
+    font-weight: 600;
+    border: 2px solid black;
+    border-radius: 0.5rem !important;
+    width: 43%;
+    background-color: aliceblue;
+
+}
+
+.cardDv p {
+    margin: 0.3rem 0rem 0.4rem !important;
+    font-weight: 600;
+}
+
+.showReviewDlt {
+    font-weight: 700;
+    padding: 0.2rem 0.6rem !important;
+    font-size: 1rem;
+    margin-top: 0.4rem;
+    color: blue;
+    border: 0.12rem solid black;
+    border-radius: 0.6rem !important;
+    background-color: #f0f0f0;
+    margin-bottom: -0.3rem !important;
+}
+
+.showReviewDlt:hover {
+    border: 0.12rem solid red;
+    color: red;
+}
+
+
+@media(max-width : 313px) {
+    #showBody {
+        width: 100%;
+        margin: 0%;
+        padding: 0%;
+        background-color: rgb(252, 246, 246);
+
+    }
+
+    .showH2 {
+        font-size: 0.85rem;
+        font-weight: 800;
+        color: darkblue;
+        margin: auto;
+        margin-top: 1.7rem;
+        margin-left: -0.76rem;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    .showH2:first-letter {
+        color: red;
+        font-size: 1.3rem;
+    }
+
+    .showDV {
+        width: 88%;
+        height: auto;
+        padding: 0.4rem 0.6rem 1rem 0.6rem;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(240, 237, 237);
+        border-radius: 0.6rem;
+    }
+
+    .showDV .shTitle {
+        font-size: 0.90rem;
+        font-weight: 700;
+        color: purple;
+        text-align: start;
+        margin-left: 0.5rem !important;
+        margin-top: 0rem;
+    }
+
+    .showDV .comonn {
+        font-size: 0.87rem;
+        text-align: start;
+        font-weight: 700;
+        color: black;
+        margin: 0.1rem 0.3rem;
+    }
+
+    .showDV .shImgg {
+        width: 95%;
+        height: 14rem;
+        background-size: cover;
+        margin: auto;
+        margin-bottom: 1rem;
+        border-radius: 0.6rem;
+        margin-top: 0.6rem;
+    }
+
+    .showDV .shImgg:hover {
+        box-shadow: 4px 4px 10px green;
+    }
+
+    .showDV .btns {
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+        text-align: center;
+        width: 100%;
+        border-radius: 1rem;
+        padding: 0.3rem 0rem;
+        margin: auto;
+        margin-top: 0.6rem;
+        margin-left: -0.7rem !important;
+    }
+
+    .showDV .btns a,
+    button {
+        font-size: 1rem;
+        font-weight: 700;
+        padding: 0.4rem 01rem;
+        border-radius: 0.6rem;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    .showDV .btns #btn1 {
+        font-size: 1.1rem;
+        padding: 0.25rem 0.6rem;
+        border-radius: 0.6rem;
+        font-weight: 600;
+        color: red;
+        background-color: black !important;
+    }
+
+    .showDV .btns .ac2 {
+        background-color: black !important;
+        color: green;
+    }
+
+    .showDV .btns .ac3 {
+        border: 2px solid darkblue;
+        color: darkblue;
+    }
+
+    .showDV .shDescription {
+        font-size: 0.9rem;
+        font-weight: 700;
+        line-height: 1.5rem;
+        /* margin-left: 0.3rem; */
+    }
+
+    /* ---------------------- */
+    /* review styling */
+
+    .reviewH2 {
+        color: darkblue;
+        font-weight: 700;
+        font-size: 1.5rem;
+    }
+
+    .reviewLable {
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-left: 0.3rem;
+    }
+
+    .reviewsText {
+        border: 0.10rem solid black;
+        border-radius: 0.4rem;
+        font-size: 1rem;
+        font-weight: 500;
+        margin-left: 0.3rem;
+
+    }
+
+    .reviewBtn {
+        font-size: 1rem;
+        margin-left: 0.6rem;
+        font-weight: 700;
+        border: 0.10rem solid black;
+    }
+
+    .reviewBtn:hover {
+        border: 0.11rem solid red !important;
+
+    }
+
+    /* Show reviews */
+
+    #showRow {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+        margin-left: 0rem;
+        /* background-color: #cedcd8; */
+        padding: 0.3rem 0.2rem;
+        border-radius: 0.5rem;
+
+    }
+
+    .cardDv {
+        border: 2px solid black;
+        border-radius: 0.5rem !important;
+        background-color: aliceblue;
+        width: 97%;
+        margin: 0.8rem 0rem 0.8rem 0.2rem !important;
+    }
+
+    .cardDv p {
+        margin: 0.4rem 0rem !important;
+        font-weight: 540;
+    }
+
+    .showReviewDlt {
+        font-weight: 700;
+        padding: 0.2rem 0.6rem !important;
+        font-size: 1rem;
+        margin-top: 0.4rem;
+        color: blue;
+        border: 0.12rem solid black;
+        border-radius: 0.6rem !important;
+        background-color: #f0f0f0;
+    
+    }
+    
+    .showReviewDlt:hover {
+        border: 0.12rem solid red;
+        color: red;
+    }
+    
+}
+
+/* ----------------------------------- */
+
+/* New and Create ejs */
+
+.newH1 {
+    color: darkblue;
+    font-size: 1.8rem;
+    font-weight: 900;
+    margin: 1.5rem 3rem;
+}
+
+.newH1::first-letter {
+    color: red;
+    font-size: 2.3rem;
+}
+
+.newDV {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50rem;
+    border-radius: 0.8rem;
+    height: auto;
+    padding: 1.5rem 1.7rem 1.5rem 2.7rem;
+    margin: 2rem auto auto 7rem;
+    background-color: rgb(250, 249, 249);
+
+}
+
+.newDV .newForm {
+    display: flex;
+    flex-direction: column;
+    margin: 0.4rem 0.8rem 1rem 0.8rem;
+}
+
+.newDV .form-label {
+    color: black;
+    font-weight: 780;
+}
+
+.newDV input {
+    border: 1.1px solid black;
+    padding: 0.5rem 0.7rem;
+    font-weight: 700;
+    margin: 0.5rem 0.8rem 0.45rem 0.8rem;
+    font-size: 1rem;
+    width: 95%;
+    border-radius: 0.6rem;
+    background: transparent;
+}
+
+.newDV input::placeholder {
+    color: black;
+    font-weight: 700;
+    font-size: 0.8rem;
+    padding-left: 0.2rem;
+}
+
+#row {
+    display: flex !important;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 95% !important;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#row .pricee,
+.countryy {
+    width: 40% !important;
+    display: flex;
+
+}
+
+.newDV textarea {
+    border: 1.1px solid black;
+    padding: 0.5rem 0.7rem;
+    font-weight: 700;
+    font-size: 1rem;
+    margin: 0.8rem 0.4rem;
+    width: 95%;
+    height: 5rem;
+    border-radius: 0.6rem;
+    background: transparent;
+}
+
+.newDV textarea::placeholder {
+    color: rgb(23, 23, 23);
+}
+
+.newDV button {
+    border: 2px solid black;
+    padding: 0.4rem 1.2rem;
+    margin: -0.3rem auto 0.8rem 0.9rem;
+    font-weight: 900;
+    font-size: 1.1rem;
+    color: white;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    background-color: black;
+}
+
+.newDV button:hover {
+    color: yellowgreen;
+}
+
+/* Bootstrap  */
+.newDV .valid-feedback {
+    margin-left: 1.1rem;
+}
+
+.newDV .invalid-feedback {
+    margin-left: 1.1rem;
+}
+
+/* ------ */
+
+
+
+/* Responsive*/
+
+@media(max-width : 313px) {
+
+    #newBody {
+        width: 100%;
+        margin: 0%;
+        padding: 0%;
+        background-color: rgb(252, 246, 246);
+
+    }
+
+    .newH1 {
+        color: darkblue;
+        font-size: 1.2rem;
+        font-weight: 900;
+        text-align: start;
+        margin-top: 1.66rem;
+        margin-left: 1.2rem;
+    }
+
+    .newH1::first-letter {
+        color: red;
+        font-size: 2rem;
+    }
+
+    .newDV {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 93%;
+        border-radius: 0.8rem;
+        height: auto;
+        background-color: rgb(248, 246, 245);
+        margin: auto;
+        margin-bottom: 4rem;
+    }
+
+
+    .newDV .newForm {
+        display: flex;
+        flex-direction: column;
+        margin: 0.4rem 0.8rem 0rem 1rem;
+    }
+
+
+    .newDV .form-label {
+        color: black;
+        font-weight: 650;
+        margin-left: -1.7rem;
+    }
+
+    .newDV input {
+        border: 1.1px solid black;
+        padding: 0.5rem 0.3rem;
+        font-weight: 700;
+        font-size: 0.7rem;
+        margin: 0.45rem -0.1rem 0.6rem -1.7rem;
+        width: 120% !important;
+        border-radius: 0.6rem;
+        background: transparent;
+    }
+
+    .newDV input::placeholder {
+        color: black;
+        font-weight: 700;
+        font-size: 0.75rem;
+        padding-left: 0.5rem;
+    }
+
+    #row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #row #neww {
+        width: 12rem !important;
+    }
+
+    #row .pricee,
+    .countryy {
+        width: 110% !important;
+        display: flex;
+        flex-direction: row;
+        margin-left: 0.8rem;
+        margin-bottom: 0.3rem;
+
+    }
+
+
+    .newDV textarea {
+        border: 1.1px solid black;
+        padding: 0.5rem 0.6rem;
+        font-weight: 700;
+        font-size: 0.8rem;
+        margin: 0.8rem 0.25rem;
+        margin: 0.8rem -0.1rem 0.8rem -1.7rem;
+        width: 119.7%;
+        border-radius: 0.6rem;
+        background: transparent;
+        color: black;
+    }
+
+    .newDV textarea::placeholder {
+        color: rgb(23, 23, 23);
+    }
+
+    .newDV button {
+        border: 2px solid black;
+        padding: 0.4rem 1.2rem;
+        margin: -0.5rem auto 0.4rem 0.7rem;
+        font-weight: 800;
+        font-size: 1rem;
+        color: white;
+        border-radius: 1rem;
+        text-align: center;
+        cursor: pointer;
+        background-color: black;
+    }
+
+    .newDV button:hover {
+        color: green;
+    }
+
+    .newDV .valid-feedback {
+        margin-left: 0.4rem;
+        margin: 0rem 0rem 0rem -1.3rem !important;
+    }
+
+    .newDV .invalid-feedback {
+        margin-left: 1.1rem;
+        margin: 0rem 0rem 0rem -1.3rem !important;
+    }
+}
+
+/* ------------------------------------ */
+
+/* UPDATE EJS */
+
+
+.updtH1 {
+    color: darkblue;
+    font-size: 1.8rem;
+    font-weight: 900;
+    margin: 1.5rem 3rem;
+}
+
+.updtH1::first-letter {
+    color: green;
+    font-size: 2.3rem;
+}
+
+.updtH2 {
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 1.5rem 3rem;
+}
+
+.updtH2 span {
+    color: darkblue;
+    font-size: 2rem;
+}
+
+.updtH2::first-letter {
+    color: green;
+    font-size: 2.4rem;
+}
+
+.updtDV {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 48rem;
+    border-radius: 0.8rem;
+    height: auto;
+    padding: 1.5rem 2rem 1.5rem 1.4rem;
+    padding-right: 1.2rem;
+    margin: auto;
+    background-color: rgb(242, 240, 240);
+}
+
+.updtDV .upd-div-Form {
+    display: flex;
+    flex-direction: column;
+    margin: 0.6rem 0.8rem 1.7rem 0.8rem;
+}
+
+.updtDV .update-form {
+    color: black;
+    font-weight: 750;
+
+}
+
+.updtDV h4 {
+    margin-left: 2rem;
+    font-style: italic;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+}
+
+.updtDV .updtImage {
+    width: 290px;
+    height: 165px;
+    margin-left: 2rem;
+    border-radius: 0.3rem;
+}
+
+.updtDV input {
+    border: 1.1px solid black;
+    padding: 0.5rem 0.7rem;
+    font-weight: 700;
+    font-size: 1rem;
+    margin: 0.45rem 0.4rem 0.5rem 0.8rem;
+    width: 98%;
+    border-radius: 0.6rem;
+    background: transparent;
+}
+
+.updtDV input::placeholder {
+    color: black;
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding-left: 0.2rem;
+}
+
+#upRow {
+    display: flex;
+    width: 98%;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+    margin: auto;
+    margin-bottom: 01rem;
+}
+
+#upRow .upPrice,
+.upCountry {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.updtDV textarea {
+    border: 1.1px solid black;
+    padding: 0.5rem 0.7rem;
+    font-weight: 700;
+    font-size: 1rem;
+    margin: 0.45rem 0.4rem 0rem 0.8rem;
+    width: 98%;
+    height: 5rem;
+    border-radius: 0.4rem;
+    background: transparent;
+}
+
+.updtDV button {
+    border: 2px solid black;
+    padding: 0.4rem 1.45rem;
+    margin: -1rem auto 0.6rem 2rem;
+    font-weight: 900;
+    font-size: 1.1rem;
+    color: white;
+    border-radius: 1rem;
+    cursor: pointer;
+    background-color: black;
+}
+
+.updtDV button:hover {
+    color: green;
+}
+
+/* Bootstrap  */
+.updtDV .valid-feedback {
+    margin-left: 1.1rem;
+}
+
+.updtDV .invalid-feedback {
+    margin-left: 1.1rem;
+}
+
+/* ------ */
+
+/* Responsive */
+
+@media (max-width : 313px) {
+
+    .updtBody {
+        width: 100%;
+        padding: 0%;
+        margin: 0%;
+        background-color: rgb(252, 246, 246);
+
+    }
+
+    .updtH1 {
+        color: rgb(12, 12, 82);
+        font-size: 1.3rem;
+        font-weight: 900;
+        margin-top: 1.5rem;
+        text-align: center;
+    }
+
+    .updtH1::first-letter {
+        color: rgb(14, 93, 14);
+        font-size: 1.9rem;
+    }
+
+    .updtH2 {
+        color: rgb(101, 6, 6);
+        font-size: 1.1rem;
+        font-weight: 700;
+        margin: 1rem 2rem;
+        margin-top: -0.6rem;
+    }
+
+    .updtH2 span {
+        color: rgb(14, 50, 134);
+        font-size: 1.1rem;
+    }
+
+    .updtH2::first-letter {
+        color: rgb(51, 1, 49);
+        font-size: 1.3em;
+    }
+
+    .updtDV {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 93%;
+        border-radius: 0.7rem;
+        height: auto;
+        background-color: rgb(247, 245, 244);
+        margin: auto;
+        margin-top: 1.7rem;
+        margin-bottom: 5rem;
+        padding-bottom: 0.7rem;
+    }
+
+    .updtDV .upd-div-Form {
+        display: flex;
+        flex-direction: column;
+        margin: 0.4rem 0.8rem 0.7rem 0.8rem;
+    }
+
+    .updtDV .update-form {
+        color: black;
+        font-weight: 650;
+        margin: auto;
+        width: 100%;
+        margin-left: -0.1rem;
+    }
+
+    .updtDV h4 {
+        margin-left: 0rem;
+        margin-bottom: 1rem;
+        margin-left: -0.6rem;
+        font-size: 1.1rem;
+        font-style: italic;
+    }
+
+    .updtDV .updtImage {
+        width: 180px;
+        height: 100px;
+        margin-left: -0.6rem;
+        margin-bottom: 0.5rem;
+        border-radius: 0.3rem;
+    }
+
+    .updtDV input {
+        border: 1.1px solid black;
+        padding: 0.5rem 0.7rem;
+        font-weight: 700;
+        font-size: 0.77rem !important;
+        margin: 0.45rem -0.1rem 0.6rem -1rem !important;
+        width: 116% !important;
+        border-radius: 0.6rem;
+        background: transparent;
+    }
+
+    .updtDV input::placeholder {
+        color: black;
+        font-weight: 700;
+        font-size: 0.75rem;
+        padding-left: 0.5rem;
+    }
+
+    #upRow {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0rem;
+    }
+
+    #upRow #updd {
+        width: 84% !important;
+        margin-left: -0.8rem !important;
+    }
+
+    #upRow .upPrice,
+    .upCountry {
+        width: 110% !important;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: 2.3rem;
+        margin-bottom: 0.6rem;
+    }
+
+    .updtDV textarea {
+        border: 1.1px solid black;
+        padding: 0.5rem 0.7rem;
+        font-weight: 700;
+        font-size: 0.77rem;
+        margin: 0.4rem 0.4rem 0.4rem -0.9rem !important;
+        width: 116% !important;
+        border-radius: 0.6rem;
+        background: transparent;
+        height: 8rem;
+    }
+
+    .updtDV button {
+        border: 2px solid black;
+        padding: 0.4rem 1.2rem;
+        margin: -0.3rem auto 0.8rem 0rem;
+        font-weight: 900;
+        font-size: 1.01rem;
+        color: white;
+        border-radius: 1rem;
+        cursor: pointer;
+    }
+
+    .updtDV button:hover {
+        color: green;
+    }
+
+    .updtDV .valid-feedback {
+        margin: 0rem 0rem 0rem -0.3rem !important;
+    }
+
+    .updtDV .invalid-feedback {
+        margin: 0rem 0rem 0rem -0.3rem !important;
+    }
+}
+
+
+
+/* ------------------------------------------------------------------------------------ */
+
+/* PROJECT PHASE 1 PART - B */
+
+/* NAVBAR */
+
+#navbar {
+    height: 4rem;
+    background-color: bisque !important;
+}
+
+.nav-link {
+    font-weight: 670 !important;
+    font-size: 1.1rem !important;
+    cursor: pointer !important;
+    margin-top: -0.11rem;
+    color: #222222 !important;
+}
+
+.navTitle {
+    margin-left: 0rem !important;
+    margin-right: 0.6rem !important;
+    /* color: #fe424d !important; */
+    color: purple !important;
+    font-size: 1.6rem !important;
+    margin-top: -0.3rem !important;
+    font-weight: 670 !important;
+    cursor: pointer !important;
+    text-decoration: none !important;
+}
+
+.fa-compass {
+    font-size: 2rem;
+    /* color: #fe424d !important; */
+    color: purple !important;
+    margin-left: 0.4rem;
+}
+
+.navbar-22 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sign-nav {
+    margin-right: 2rem;
+}
+
+.sign-nav .nav-link {
+    margin: auto 0.6rem;
+    color: rgb(57, 2, 62) !important;
+}
+
+.sign-nav .nav-link:hover {
+    color: rgb(18, 235, 14) !important;
+}
+
+.sign-nav .nav-link1:hover {
+    color: darkcyan !important;
+}
+
+
+/* RESPONSIVEE */
+
+@media(max-width : 313px) {
+    .nav-link {
+        font-weight: 900 !important;
+        font-size: 1rem !important;
+        cursor: pointer !important;
+        line-height: 1rem !important;
+        margin-left: 0.5rem !important;
+    }
+
+    .navTitle {
+        margin-left: -2.63rem !important;
+        color: purple !important;
+        font-size: 1.4rem !important;
+        margin-top: -0.3rem;
+        font-weight: 900;
+
+    }
+
+    .navbar-toggler {
+        margin-right: 0rem;
+    }
+
+    .sign-nav .nav-link {
+        color: rgb(57, 2, 62) !important;
+    }
+
+    .sign-nav {
+        margin-right: -1rem;
+    }
+
+    .search-bar{
+        display: flex;
+        display: none !important;                                      
+    }
+
+}
+
+
+/* FOOTER */
+
+.f-info {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: white;
+    padding: 0.6rem 0rem;
+
+    border-top: 2px solid rgb(224, 223, 223);
+    border-radius: 0.2rem;
+    background-color: rgb(249, 247, 247);
+    margin: auto;
+    margin-top: 4rem;
+}
+
+.f-info-socials i {
+    font-size: 1.8rem;
+    margin-left: 1.6rem;
+    cursor: pointer;
+}
+
+.f-info-brand {
+    font-size: 1.3rem;
+    color: #222222;
+    font-weight: 650;
+}
+
+.f-info-links a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin: 0rem 0.5rem 0rem 0.5rem;
+    font-weight: 600;
+}
+
+.f-info-links a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+.f-info-socials,
+.f-info-brand,
+.f-info-links {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    vertical-align: center;
+    margin: 0.3rem auto;
+}
+
+
+@media (max-width : 313px) {
+    .f-info {
+        width: 92%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        flex-direction: column;
+        border-top: 2px solid rgb(224, 223, 223);
+        border-radius: 0.2rem;
+        background-color: rgb(249, 247, 247);
+        padding: 0.6rem 0rem;
+        margin: auto;
+        margin-top: 0rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .f-info-socials i {
+        font-size: 1.3rem !important;
+        margin-left: 1.4rem !important;
+        cursor: pointer;
+    }
+
+    .f-info-brand {
+        font-size: 1rem !important;
+        color: #222222;
+        font-weight: 650;
+    }
+
+    .f-info-links a {
+        text-decoration: none;
+        font-size: 0.95rem;
+        margin: 0rem 0.6rem 0rem 0.5rem;
+        font-weight: 600;
+    }
+
+    .f-info-links a:hover {
+        text-decoration: underline;
+        color: red;
+    }
+
+    .f-info-socials,
+    .f-info-brand,
+    .f-info-links {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        vertical-align: center;
+        margin: 0.3rem auto;
+    }
+}
+
+/* -------------------------- */
+
+/* Flash msg */
+
+
+/* flashh mesg  */
+.flash-msg {
+    width: 53%;
+    margin: 1.1rem auto !important;
+    
+}
+
+.flash-h2 {
+    font-size: 1.2rem !important;
+    margin: 0rem auto;
+}
+
+.flash-btn {
+    padding-top: 1rem !important;
+    margin-left: 0.6rem !important;
+}
+
+
+@media(max-width : 313px) {
+
+    .flash-msg {
+        width: 88%;
+        margin: 1rem auto 1rem 1rem !important;
+    }
+
+    .flash-h2 {
+        font-size: 0.9rem !important;
+        margin: -0.5rem 0.3rem -0.3rem auto;
+    }
+    
+    .flash-btn {
+        padding-top: 0rem !important;
+    }
+}
+
+/* ---------------------------- */
+
+
+/* SignUp/logon  part styling */
+
+
+.signH2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: black;
+}
+
+.signLable {
+    font-size: 1.1rem;
+    font-weight: 650;
+    margin-left: 0.4rem;
+    color: black;
+}
+
+/* .sign-input {
+    width: 130% !important;
+} */
+
+.sign-btn {
+    margin: 0.75rem 0rem;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+@media(max-Width : 313px) {
+
+    .sign-dv1 {
+        width: 100%;
+        margin-left: -3rem;
+    }
+
+    .sign-dv1 {
+        width: 100%;
+    }
+
+    .signH2 {
+        font-size: 1.2rem;
+        font-weight: 700;
+        text-align: start;
+        color: black;
+        width: 100% !important;
+    }
+
+    .signLable {
+        font-size: 1rem;
+        font-weight: 650;
+        margin-left: 0.4rem;
+        color: black;
+    }
+
+    .sign-input {
+        width: 105% !important;
+    }
+
+    .sign-btn {
+        margin: 0.7rem 0rem;
+        font-weight: 700;
+    }
+}
+
+/*--------------------------------------------------- */
+
+/*  filters  */
+
+#filters{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 1.2rem;
+    align-items: center;
+}
+
+.filter1{
+    margin-right: 2rem ;
+    text-align: center;
+    opacity: 0.7;
+}
+
+.filter1:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.filter1 p {
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+
+.filter1 p:hover {
+    font-weight: 700;
+    text-decoration: underline;
+    color: purple;
+}
+
+.filter1 i {
+    color: black;
+}
+
+.tax-switch  {
+    border: 1.2px solid black;
+    border-radius: 10px;
+    padding: 0.45rem 0.8rem;
+    background-color: antiquewhite;
+    box-shadow: 2px 3px 6px purple;
+    margin: 12px;
+    font-size: 1rem;
+    font-weight: 900;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+
+/* responsive */
+
+@media(max-width : 313px) {
+
+    #filters{
+        width: 95%;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px 5px;
+        justify-content: space-between;
+        margin-left: 0.37rem;
+    }
+
+    .filter1{
+        margin-right: 1.7rem ;
+        text-align: center;
+        opacity: 0.7;
+    }
+
+    .filter1:hover{
+        opacity: 1;
+        cursor: pointer;
+    }
+
+    .filter1 p {
+        font-weight: 600;
+        font-size: 0.65rem;
+    }
+
+    .filter1 p:hover {
+        font-weight: 700;
+        text-decoration: underline;
+        color: purple;
+    }
+
+    .filter1 i {
+        color: black;
+    }
+
+    .tax-switch  {
+        border: 1.2px solid black;
+        border-radius: 10px;
+        padding: 0.45rem 0.6rem;    
+        background-color: antiquewhite;
+        box-shadow: 2px 2.6px 5px purple;
+        margin: 10px;
+        font-size: 0.92rem;
+        font-weight: 700;
+        color: black;
+        margin-right: 1rem;
+        margin-left: -0.3rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .hide-flt {
+        display: none;
+    }
+}
+
+/* ------------------------------------------------- */
+
+
+/* search bar */
+
+#search-bar{
+    display: flex;
+    display: inline;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-left: 2rem;
+}
+
+#search-bar .srch_input {
+    color: rgb(12, 106, 1);
+
+    cursor: pointer;
+    padding: 2px 7px;
+    font-weight: 600;
+    margin-right: 0.4rem !important;
+    border: 2px solid green !important;
+    border-radius: 0.3rem;
+    width: 255px;
+    border: 1.8px solid green;
+    background-color: rgb(251, 247, 247);
+
+}
+#search-bar .srch_input:hover{
+    box-shadow: 1px 1px 4px rgb(164, 230, 164);
+}
+
+#search-bar .srch_btn{
+    cursor: pointer;
+    font-weight: 700 !important;
+    font-size: 1.16rem;
+    border: 2px solid green;
+    box-shadow: 0px 0px 1px green;
+    color: rgb(12, 106, 1);
+    border-radius: 0.3rem;
+    padding: 0px 9px;
+    background-color: rgb(251, 247, 247);
+
+}
+#search-bar .srch_btn:hover{
+    box-shadow: 1px 1px 4px rgb(164, 230, 164);
+    color: green;
+}
+
+/* responsive of search_bar */
+
+@media (max-width:313px) {
+    
+#search-bar{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    display: inline;
+    align-items: center;
+}
+
+#search-bar .srch_input {
+    color: rgb(12, 106, 1);
+    cursor: pointer;
+    padding: 2px 7px;
+    font-weight: 600;
+    margin-right: 0rem !important;
+    margin-left: -4rem !important;
+    border: 2px solid green !important;
+    border-radius: 0.3rem;
+    width: 145px;
+    border: 1.8px solid green;
+    background-color: rgb(251, 247, 247);
+
+}
+#search-bar .srch_input:hover{
+    box-shadow: 1px 1px 4px rgb(164, 230, 164);
+}
+
+#search-bar .srch_btn{
+    cursor: pointer;
+    font-weight: 600 !important;
+    font-size: 1.16rem;
+    border: 2px solid green;
+    box-shadow: 0px 0px 1px green;
+    color: rgb(12, 106, 1);
+    border-radius: 0.3rem;
+    padding: 0px 7px;
+    background-color: rgb(251, 247, 247);
+    margin: 0.5rem auto auto -0.4rem;
+
+}
+#search-bar .srch_btn:hover{
+    box-shadow: 1px 1px 4px rgb(164, 230, 164);
+    color: green;
+}
+}

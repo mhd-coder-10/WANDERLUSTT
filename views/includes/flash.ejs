@@ -1,0 +1,22 @@
+
+<!-- for success msg -->
+<% if(success && success.length) { %>
+<div class="flash-msg">
+    <div class="alert alert-primary alert-dismissible fade show " role="alert">
+        <h2 class="flash-h2"><%= success %> </h2>
+        <button type="button" class="btn-close flash-btn" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+</div>
+<% } %>
+
+
+
+<!-- for error/fail msg -->
+<% if(error && error.length > 0) { %>
+<div class="flash-msg">
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <h2 class="flash-h2"> <%= error %> </h2>
+       <button type="button" class="btn-close flash-btn" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+</div>
+<% } %>

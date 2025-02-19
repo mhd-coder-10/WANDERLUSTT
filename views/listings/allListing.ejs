@@ -1,0 +1,109 @@
+
+<% layout("/layouts/boilerplate.ejs") %> <!-- inmportant remember-->
+
+<body id="allBody">
+    <!-- <h1 class="indexH1"> All Listings...</h1> -->
+
+<!-- filters (all icons part) -->
+<div id="filters">
+
+    <div class="filter1">
+        <div class="icon"><i class="fa-solid fa-icons"></i></div>
+        <p>Icones</p>
+    </div>
+
+    <div class="filter1">
+        <div class="icon"><i class="fa-solid fa-cow"></i></div>
+        <p>Farme</p>
+    </div>
+
+    <div class="filter1">
+        <div class="icon"><i class="fa-brands fa-fort-awesome"></i></div>
+        <p>Castles</p>
+    </div>
+
+    <div class="filter1">
+        <div class="icon"><i class="fa-solid fa-tree"></i></div>
+        <p>Camping</p>
+    </div>
+
+    <div class="filter1">
+        <div class="icon"><i class="fa-solid fa-snowflake"></i></div>
+        <p>Snowflack</p>
+    </div>
+
+    <div class="filter1">
+        <div class="icon"><i class="fa-solid fa-bed"></i></div>
+        <p>Rooms</p>
+    </div>
+
+    <div class="filter1 hide-flt">
+        <div class="icon"><i class="fa-solid fa-mountain-sun"></i></div>
+        <p>Mountain</p>
+    </div>
+
+    <div class="filter1 hide-flt">
+        <div class="icon"><i class="fa-solid fa-landmark-dome"></i></div>
+        <p>Historical</p>
+    </div>
+
+    <div class="filter1 hide-flt">
+        <div class="icon"><i class="fa-solid fa-mug-saucer"></i></div>
+        <p>breackfast</p>
+    </div>
+
+    <div class="filter1 hide-flt">
+        <div class="icon"><i class="fa-solid fa-landmark"></i></div>
+        <p>Historic Homes</p>
+    </div>
+
+    <div class="filter1 flt11 hide-flt">
+        <div class="icon"><i class="fa-solid fa-ship"></i></div>
+        <p>Boats</p>
+    </div>
+
+    <div class="filter1 hide-flt">
+        <div class="icon"><i class="fa-solid fa-igloo"></i></div>
+        <p>Domes</p>
+    </div>
+
+    <div class="tax-switch">
+        <div class="form-check-reverse form-switch">
+            <label class="form-check-label" for="flexSwitchCheckDefault">Display total after taxes</label>
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+        </div>
+    </div>
+</div>
+
+    <!-- <form method="get" action="/listings/new" class="create">
+        <button id="createButton">Create New Listing</button>
+    </form> -->
+
+    <div id="mainIndex">
+        <% for (listing of lstng ) { %>
+            <a href="/listings/<%= listing._id %>" class="aaa">
+                <div class="indexDT">
+                    <img class="imgg" src="<%= listing.image.url %>"/>
+                    <h2 class="title"> <%= listing.title %> </h2>
+                    <h2 class="price comon"> <span>Price : </span> &#8377; <%= listing.price.toLocaleString("en-IN") %> /day </h2>
+                    <i class="text-info"> +18% GST </i>
+                </div>
+            </a>
+        <% } %>
+    </div>
+</body>
+
+<script>
+    // let textSwitch = document.getElementById("flexSwitchCheckDefault");
+    // textSwitch.addEventListener("click", ()=>{
+    //     let text_info = document.querySelectorAll(".text-info");
+    //     for(info of text_info) {
+    //         if(info.style.display != "inline") {
+    //             info.style.display = 'inline';
+    //         } else {
+    //             info.style.display = 'none';
+    //         }
+    //     }  
+    // });
+    
+</script>
