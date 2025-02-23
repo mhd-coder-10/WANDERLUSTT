@@ -31,7 +31,7 @@ const MongoStore = require('connect-mongo'); // "express-session" neccesary for 
                                                 // in Mongo Cloud (Atlas Database) )
 
 // Note (remember): Used pbkdf2 Hashing algorithm in passport  (algorithm means GANITIK NIYAMO)
-const passport = require("passport");  
+const passport = require("passport"); 
 const LocalStratagy = require("passport-local");
 const User = require("./Models/user.js");
 
