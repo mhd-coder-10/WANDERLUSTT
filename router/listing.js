@@ -20,6 +20,10 @@ const upload = multer({storage});
 // All Listings show Route  (created by me for me practice)
 router.get("/alllistings", wrapAsync(listingController.allListings));
 
+router.get("/", (req, res)=>{
+    res.render("/", listingController.index);
+})
+
 router.route("/")
     .get(wrapAsync(listingController.index))   // 1.Index route / listing links
     .post(isLoggedIn, upload.single('listing[image]'), wrapAsync(listingController.createListing));   // 3. Create new Route 

@@ -111,6 +111,10 @@ app.use("/listings/:id/reviews", reviewRouter);
 app.use("/", userRouter);
 
 // Error Handling Meddleware
+// app.get("/", (req, res) => {
+//     res.redirect("/listings");
+// });
+
 // for wrong page :-
 app.all("*", (req, res, next) => {
     next(new ExpressError(404, "Page does not found!"));

@@ -100,7 +100,7 @@
 
                     <p> Posted by <b> @<%= review.author.username %> </b> </p>
 
-                    <% if (currUser._id.equals(review.author._id)){ %>
+                    <% if ( currUser && currUser._id.equals(review.author._id)){ %>
                     <form method="POST" action="/listings/<%= listing._id %>/reviews/<%=review._id %>?_method=DELETE">
                         <button class="showReviewDlt">Delete </button>
                     </form>
